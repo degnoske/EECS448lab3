@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#p1 {
+    border-style: solid;
+    border-color: white;
+}
+</style>
+<meta charset="utf-8" />
+<title></title>
+</head>
+<body>
+<div id="p1">This is a div.</div>
+Background Color(red/green/blue): <input type="text" id="background"><br>
+Border Color(red/green/blue): <input type="text" id="bordercolor"><br>
+width (thin/medium/thick): <input type="text" id="width"><br>
+<button type="button" onclick="myFunction()">Set text color</button>
+
+<script>
+
+
+
+
+function myFunction() {
+	var someTag = document.getElementById("p1");
+	
+	var bg=document.getElementById("background").value;
+	var bordercolor= document.getElementById("bordercolor").value;
+	var width1=document.getElementById("width").value;
+//Change the style attribute
+someTag.style.backgroundColor = bg;
+someTag.style.borderColor = bordercolor;
+
+someTag.style.borderWidth=width1;
+}
+
+
+</script>
+</body>
+</html>

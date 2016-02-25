@@ -1,0 +1,39 @@
+<html>
+<h1>Famous Tom's</h1>
+<br>
+<h2>There are a lot of famous Tom's out there, Let's take a look at 5 of them</h2>
+<br>
+<button button value="Previous" onclick="slideshow(-1)" >Previous</button>
+<img id="myImg" src="tom1.jpg" width="200" height="300"></img>
+<button button value="Next" onclick="slideshow(1)" >next</button>
+</html>
+<script type="text/javascript" >
+var slide=new Array();
+slide[0]=new Image();
+slide[1]=new Image();
+slide[2]=new Image();
+slide[3]=new Image();
+slide[4]=new Image();
+slide[0].src="tom1.jpg"
+slide[1].src="tomhanks.jpg"
+slide[2].src="tomcat.png"
+slide[3].src="TomSelleck.jpg"
+slide[4].src="tombrady.jpg"
+
+var value=0;
+
+
+function slideshow(add) {
+value=value+add;
+if (value>4){
+value=0;}
+if(value<0){
+value=4;}
+
+document.getElementById("myImg").src=slide[value].src;
+
+
+
+}
+
+</script>

@@ -1,0 +1,6 @@
+var someTag = docuement.getElementById("p1");
+
+function myfunction() {
+//Change the style attribute
+someTag.style.backgroundColor = "blue";
+}
